@@ -1,0 +1,12 @@
+# amogus fnaf
+
+
+Main tasks:
+- [ ] make rc car camera rig
+	- [ ] model will come later
+- [ ] make up poke monitor and keyboard
+
+
+
+Ideas:
+- [ ] do most non vr stuff as 3d game for faster testing
