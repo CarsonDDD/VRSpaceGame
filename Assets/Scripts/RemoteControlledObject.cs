@@ -19,19 +19,28 @@ public class RemoteControlledObject : MonoBehaviour
 {
     [SerializeField]
     private Transform headTransform;// aka the camera attached to the head
+    [SerializeField]
+    private Transform armPivot;// aka the camera attached to the head
     private CharacterController _characterController;
 
     public float moveSpeed = 0.01f;
 	public float headSpeed = 0.09f;
+	public float armSpeed = 0.05f;
 
 	//aaaah
-	private float currentXRotation = 0f;
-	private float currentYRotation = 0f;
+	private float currentHeadXRotation = 0f;
+	private float currentHeadYRotation = 0f;
 
-	// Joystick sim
-	public Vector2 moveStick = new Vector2(0,0);// 1 and -1 are max intensity
+    private float currentArmXRotation = 0f;
+    private float currentArmYRotation = 0f;
+    private float currentArmZRotation = 0f;
+
+    // Joystick sim
+    public Vector2 moveStick = new Vector2(0,0);// 1 and -1 are max intensity
     public Vector2 headStick = new Vector2(0,0);// rotation
     public Vector2 MaxHeadRotationMagnitude = new Vector2(10,10);// cannot be negative
+    public Vector2 armStick = new Vector2(0, 0);// TODO: this may need to be a vector 3
+    public Vector3 MaxArmRotationMagnitude = new Vector3(15, 15, 15);// cannot be negative
     //public float moveReturnSpeed = 0.1f; // This may be a bad idea. This is done automatically through the real controller, no need to sim
 
 
@@ -48,6 +57,7 @@ public class RemoteControlledObject : MonoBehaviour
     // Revert back to calling fixed update
     void Update()
     {
+		// MOVEMENT
 		// move.y = z movement
 		moveStick.Normalize();
         _characterController.Move(new Vector3(moveStick.x * moveSpeed, 0, moveStick.y * moveSpeed));
@@ -56,17 +66,28 @@ public class RemoteControlledObject : MonoBehaviour
 		//rotate based off x,y
 		// make sure final rotation x,y is within bounds
 
+
+		// HEAD ROTATION
 		// y is actually x and x is actually y.
 		// to rotate in a direction we rotate on the other axis
-		currentYRotation += headStick.x * headSpeed;
-		currentXRotation += headStick.y * headSpeed;
+		currentHeadYRotation += headStick.x * headSpeed;
+		currentHeadXRotation += headStick.y * headSpeed;
 
 		//Debug.Log("PREnewRotation: " + newRotation);
-		currentXRotation = Mathf.Clamp(currentXRotation, -MaxHeadRotationMagnitude.y, MaxHeadRotationMagnitude.y);
-		currentYRotation = Mathf.Clamp(currentYRotation, -MaxHeadRotationMagnitude.x, MaxHeadRotationMagnitude.x);
+		currentHeadXRotation = Mathf.Clamp(currentHeadXRotation, -MaxHeadRotationMagnitude.y, MaxHeadRotationMagnitude.y);
+		currentHeadYRotation = Mathf.Clamp(currentHeadYRotation, -MaxHeadRotationMagnitude.x, MaxHeadRotationMagnitude.x);
 		//Debug.Log("POSTnewRotation: " + newRotation);
-		headTransform.localEulerAngles = new Vector3(currentXRotation, currentYRotation, 0f);
-	}
+		headTransform.localEulerAngles = new Vector3(currentHeadXRotation, currentHeadYRotation, 0f);
+
+        // ARM ROTATION
+        currentArmYRotation += armStick.x * armSpeed;
+        currentArmXRotation += armStick.y * armSpeed;
+        //currentArmXRotation += armStick.y * armSpeed;
+		// TODO: Z/roll movement
+        currentArmXRotation = Mathf.Clamp(currentArmXRotation, -MaxArmRotationMagnitude.y, MaxArmRotationMagnitude.y);
+        currentArmYRotation = Mathf.Clamp(currentArmYRotation, -MaxArmRotationMagnitude.x, MaxArmRotationMagnitude.x);
+        armPivot.localEulerAngles = new Vector3(currentArmXRotation, currentArmYRotation, 0f);
+    }
 
 	private void FixedUpdate()
 	{
@@ -101,6 +122,34 @@ public class RemoteControlledObject : MonoBehaviour
 				headStick.x = 0;
 			}
 		}
+		else if (Input.GetKey(KeyCode.RightControl))
+        {
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                armStick.y -= 1;
+            }
+            else if (Input.GetKey(KeyCode.DownArrow))
+            {
+                armStick.y += 1;
+            }
+            else
+            {
+                armStick.y = 0;
+            }
+
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                armStick.x -= 1;
+            }
+            else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                armStick.x += 1;
+            }
+            else
+            {
+                armStick.x = 0;
+            }
+        }
         else
         {
 			if(Input.GetKey(KeyCode.UpArrow))

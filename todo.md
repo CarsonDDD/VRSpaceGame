@@ -6,9 +6,15 @@ Main tasks:
 	- [x] head movement
 	- [x] body movement
 	- [x] attach camera
-	- [ ] arm movement
+	- [x] arm movement
+	- [ ] arm roll
 	- [ ] model will come later
 - [ ] make up poke monitor and keyboard
+- [ ] build level (needs to be done at home)
+- [ ] Enemy + pathing
+- [ ] door scripts to add to levels
+- [ ] interaction minigames
+
 
 
 
