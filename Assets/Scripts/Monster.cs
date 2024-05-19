@@ -33,11 +33,11 @@ public class Monster : MonoBehaviour
     {
         Vector3 distance = rb.position - currentTarget.position;
 
-        if(distance. < BUFFERLK)
+       /* if(distance. < BUFFERLK)
         {
             //switch target
             yield return 0;
-        }
+        }*/
 
         distance = distance.normalized;// for direction
         rb.MovePosition(distance * movespeed * MoveSpeedMultiplier);

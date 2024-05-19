@@ -23,7 +23,7 @@ public class RemoteControlledObject : MonoBehaviour
     private Transform armPivot;// aka the camera attached to the head
     private CharacterController _characterController;
 
-    public float moveSpeed = 0.01f;
+    public float moveSpeed = 2f;
 	public float headSpeed = 0.09f;
 	public float armSpeed = 0.05f;
 
@@ -60,7 +60,7 @@ public class RemoteControlledObject : MonoBehaviour
 		// MOVEMENT
 		// move.y = z movement
 		moveStick.Normalize();
-        _characterController.Move(new Vector3(moveStick.x * moveSpeed, 0, moveStick.y * moveSpeed));
+        _characterController.SimpleMove(new Vector3(moveStick.x * moveSpeed * Time.deltaTime, 0, moveStick.y * moveSpeed * Time.deltaTime));
 
 		headStick.Normalize();
 		//rotate based off x,y
@@ -70,8 +70,8 @@ public class RemoteControlledObject : MonoBehaviour
 		// HEAD ROTATION
 		// y is actually x and x is actually y.
 		// to rotate in a direction we rotate on the other axis
-		currentHeadYRotation += headStick.x * headSpeed;
-		currentHeadXRotation += headStick.y * headSpeed;
+		currentHeadYRotation += headStick.x * headSpeed * Time.deltaTime;
+		currentHeadXRotation += headStick.y * headSpeed * Time.deltaTime;
 
 		//Debug.Log("PREnewRotation: " + newRotation);
 		currentHeadXRotation = Mathf.Clamp(currentHeadXRotation, -MaxHeadRotationMagnitude.y, MaxHeadRotationMagnitude.y);
@@ -80,8 +80,8 @@ public class RemoteControlledObject : MonoBehaviour
 		headTransform.localEulerAngles = new Vector3(currentHeadXRotation, currentHeadYRotation, 0f);
 
         // ARM ROTATION
-        currentArmYRotation += armStick.x * armSpeed;
-        currentArmXRotation += armStick.y * armSpeed;
+        currentArmYRotation += armStick.x * armSpeed * Time.deltaTime;
+        currentArmXRotation += armStick.y * armSpeed * Time.deltaTime;
         //currentArmXRotation += armStick.y * armSpeed;
 		// TODO: Z/roll movement
         currentArmXRotation = Mathf.Clamp(currentArmXRotation, -MaxArmRotationMagnitude.y, MaxArmRotationMagnitude.y);
