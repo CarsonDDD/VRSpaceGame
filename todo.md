@@ -10,10 +10,12 @@ Main tasks:
 	- [ ] arm roll
 	- [ ] model will come later
 - [ ] make up poke monitor and keyboard
-- [ ] build level (needs to be done at home)
+- [x] build level (needs to be done at home)
+	- [ ] add windows
 - [ ] Enemy + pathing
 - [ ] door scripts to add to levels
 - [ ] interaction minigames
+- [ ] sounds
 
 
 
@@ -28,11 +30,13 @@ You crawl and lock yourself in the computer room. The alien destroys engines and
 
 Inside the computer room you have acess to a computer which can get acess to the following:
 - look at cameras around the ship.
-- control rover.
+- remote control rover(s)--if one dies you can use the other, acting as lives.
 
-You must use the rover and cameras to complete the game
+You must use the rover and cameras to complete the game.
 
-Game objectives:
+The "Game" part is an escape room, where you must use the rover(controllers) and computer(hand tracking) to do mini puzzles/interactions to advance, while avoiding(?) the alien.
+
+Possible Game objectives:
 1. fix power--opens locked doors etc, allows for other objectives once complete
 	1. Restore engines. 
 		1. Disable gravity 
