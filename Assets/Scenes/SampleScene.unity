@@ -20091,6 +20091,103 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363339645}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &366721472
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1847661191167655414, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295308894408978134, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2801199286842362705, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_Name
+      value: Test Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 2801199286842362705, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99991894
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0127354665
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 1.459
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510847974852572492, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961418322217953461, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004902060010431848, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6744353286836997182, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
 --- !u!1 &368798915
 GameObject:
   m_ObjectHideFlags: 0
@@ -28544,7 +28641,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 2
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -31369,6 +31466,7 @@ GameObject:
   - component: {fileID: 1336149007}
   - component: {fileID: 1336149008}
   - component: {fileID: 1336149009}
+  - component: {fileID: 1336149010}
   m_Layer: 0
   m_Name: RoverUSBReciever
   m_TagString: Untagged
@@ -31384,7 +31482,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336149006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.51, y: 0.93, z: 3.656}
+  m_LocalPosition: {x: -2.51, y: 0.93, z: 5.477}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31427,11 +31525,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnPressed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1336149010}
+        m_TargetAssemblyTypeName: DoorController, Assembly-CSharp
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnUnPressed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1336149010}
+        m_TargetAssemblyTypeName: DoorController, Assembly-CSharp
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   b: 9.23
+  a: 1
+--- !u!114 &1336149010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336149006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be61bc1183cbda14489f47d59301b53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorTransform: {fileID: 2103246772}
+  speed: 1
 --- !u!1 &1339719560
 GameObject:
   m_ObjectHideFlags: 0
@@ -39389,6 +39526,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098036119}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2103246772 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4961418322218185877, guid: c28fa0117e296024d9c9525026cabedc, type: 3}
+  m_PrefabInstance: {fileID: 366721472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2104850699
 GameObject:
   m_ObjectHideFlags: 0
@@ -39881,12 +40023,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   headTransform: {fileID: 1120993673}
   armPivot: {fileID: 1948287445}
-  moveSpeed: 0.1
-  headSpeed: 1.5
-  armSpeed: 0.09
+  moveSpeed: 30
+  headSpeed: 20
+  armSpeed: 20
   moveStick: {x: 0, y: 0}
   headStick: {x: 0, y: 0}
-  MaxHeadRotationMagnitude: {x: 15, y: 15}
+  MaxHeadRotationMagnitude: {x: 30, y: 30}
   armStick: {x: 0, y: 0}
   MaxArmRotationMagnitude: {x: 15, y: 15, z: 15}
 --- !u!65 &337422346412488140

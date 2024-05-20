@@ -11,7 +11,7 @@ public class DoorController : MonoBehaviour
     private bool isOpening = false;
 
 	// local positions
-	private Vector3 openPosition = new Vector3 (1, 0, 0);// close position is always 0,0,0
+	private Vector3 openPosition = new Vector3 (-1, 0, 0);// close position is always 0,0,0
 	private Vector3 closedPosition = new Vector3(0, 0, 0);
 
 	// Start is called before the first frame update
@@ -25,26 +25,28 @@ public class DoorController : MonoBehaviour
     {
         if(isOpening)
         {
-			transform.localPosition = Vector3.MoveTowards(transform.localPosition, openPosition, speed * Time.deltaTime);
+			doorTransform.localPosition = Vector3.MoveTowards(doorTransform.localPosition, openPosition, speed * Time.deltaTime);
 			
-            if(transform.localPosition == openPosition) isOpening = false;
+            if(doorTransform.localPosition == openPosition) isOpening = false;
 		}
         else if(isClosing)
         {
-			transform.localPosition = Vector3.MoveTowards(transform.localPosition, closedPosition, speed * Time.deltaTime);
+			doorTransform.localPosition = Vector3.MoveTowards(doorTransform.localPosition, closedPosition, speed * Time.deltaTime);
 			
-            if(transform.localPosition == closedPosition) isClosing = false;
+            if(doorTransform.localPosition == closedPosition) isClosing = false;
 		}
     }
 
     public void Open()
     {
+        Debug.Log("Door opening");
         isOpening = true;
         isClosing = false;
     }
 
 	public void Close()
 	{
+		Debug.Log("Door closing");
 		isOpening = false;
 		isClosing = true;
 	}

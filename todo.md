@@ -16,6 +16,7 @@ Main tasks:
 - [ ] door scripts to add to levels
 - [ ] interaction minigames
 - [ ] sounds
+- [ ] un static doors
 
 
 

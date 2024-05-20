@@ -6,8 +6,8 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Collider))]
 public class RobotTouchReciever : MonoBehaviour
 {
-	[SerializeField] public UnityEvent<GameObject> OnPressed;
-	[SerializeField] public UnityEvent<GameObject> OnUnPressed;
+	[SerializeField] public UnityEvent OnPressed;
+	[SerializeField] public UnityEvent OnUnPressed;
 	[SerializeField] public float b = 1;
 	[SerializeField] public float a = 1;
 
@@ -23,7 +23,8 @@ public class RobotTouchReciever : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Arm")
         {
-			OnPressed?.Invoke(this.gameObject);
+			OnPressed?.Invoke();
+			Debug.Log("Arm Entered!");
         }
 	}
 
@@ -31,7 +32,8 @@ public class RobotTouchReciever : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Arm")
 		{
-			OnUnPressed?.Invoke(this.gameObject);
+			OnUnPressed?.Invoke();
+			Debug.Log("Arm Left!");
 		}
 	}
 }
