@@ -12,6 +12,9 @@ public class Computer : MonoBehaviour
 
     [SerializeField] private RenderTexture cameraTargetTexture;
 
+    [SerializeField] private GameObject CameraControlButtonPrefab;
+    [SerializeField] private GameObject CameraControlButtonRoot;
+
 	public bool SwitchCamera { 
         get { return true; } 
         set { CycleDisplay(); } }
@@ -43,7 +46,7 @@ public class Computer : MonoBehaviour
 
     }
 
-    private void SetCamera(int index)
+    public void SetCamera(int index)
     {
         if(index < 0 || index >= cameras.Length) return;
 
@@ -63,6 +66,7 @@ public class Computer : MonoBehaviour
     {
         GameObject[] cams = GameObject.FindGameObjectsWithTag("SecurityCamera");
         cameras = new Camera[cams.Length];
+        Debug.Log("Total Security Cameras in Scene: " + cams.Length);
         for(int i=0; i < cams.Length; i++)
         {
             cameras[i] = cams[i].GetComponentInChildren<Camera>();
@@ -70,6 +74,26 @@ public class Computer : MonoBehaviour
             //cameras[i].enabled = false;
         
             Debug.Log($"Added {cams[i].name} to cameras!");
-        }
-    }
+ 
+		}
+
+		/*for(int i = 0; i < cameras.Length; i++)
+        {
+			Debug.Log($"({cameras.Length}:{i})Creating button for camera {i}.");
+
+			GameObject controlButton = Instantiate(CameraControlButtonPrefab, CameraControlButtonRoot.transform);
+
+
+			CameraControlButton but = controlButton.GetComponent<CameraControlButton>();
+			but.cameraId = i;
+			but.computerReference = this;
+			Debug.Log($"Button {i} created successfully.");
+
+			Toggle toggle = controlButton.GetComponent<Toggle>();
+			//toggle.isOn = (i == 0);
+			toggle.group = CameraControlButtonRoot.GetComponent<ToggleGroup>();
+		}*/
+
+	
+	}
 }
