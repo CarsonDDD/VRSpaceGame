@@ -7,7 +7,6 @@ Main tasks:
 	- [x] body movement
 	- [x] attach camera
 	- [x] arm movement
-	- [ ] arm roll
 	- [ ] model will come later
 - [ ] make up poke monitor and keyboard
 - [x] build level (needs to be done at home)
