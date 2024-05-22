@@ -23,6 +23,18 @@ Main tasks:
 Ideas:
 - [ ] do most non vr stuff as 3d game for faster testing
 
+final todo: 
+- [x] robot rotation
+- [x] hook up doors
+- [ ] cameras
+- [ ] Unlock game
+- [ ] add robot grab/pulls?
+- [ ] multiple robots act as lives
+- [ ] enemy ai
+- [ ] sound/extras
+- [ ] story setup
+- [ ] table setup
+
 
 Game idea:
 you are on a mining spaceship and an alien sneaks on. your legs are either broken or consumed by the alien.

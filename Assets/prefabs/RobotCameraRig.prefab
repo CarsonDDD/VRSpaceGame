@@ -412,7 +412,7 @@ Transform:
   m_Children:
   - {fileID: 2585890942560936954}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1808790351481044870
 BoxCollider:
@@ -447,11 +447,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e70fa07da6afc4fa5e86de9e96fcdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headTransform: {fileID: 6364857418913402694}
+  headTransform: {fileID: 2585890942560936954}
   armPivot: {fileID: 4706398379398110815}
   moveSpeed: 30
   headSpeed: 20
   armSpeed: 20
+  LeftController: 1
+  KeyboardControls: 1
   moveStick: {x: 0, y: 0}
   headStick: {x: 0, y: 0}
   MaxHeadRotationMagnitude: {x: 30, y: 30}

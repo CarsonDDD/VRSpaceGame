@@ -28,7 +28,9 @@ public class RemoteControlledObject : MonoBehaviour
 	public float headSpeed = 0.09f;
 	public float armSpeed = 0.05f;
 
-	public bool leftController = true;
+	public bool LeftController = true;
+
+	public bool KeyboardControls = false;
 
 	//aaaah
 	private float currentHeadXRotation = 0f;
@@ -65,13 +67,19 @@ public class RemoteControlledObject : MonoBehaviour
 		// MOVEMENT
 		// move.y = z movement
 		moveStick.Normalize();
-        _characterController.SimpleMove(new Vector3(moveStick.x * moveSpeed * Time.deltaTime, 0, moveStick.y * moveSpeed * Time.deltaTime));
+		// USE DIRECTION OF HEAD
+		Vector3 moveDirection = headTransform.forward * moveStick.y + headTransform.right * moveStick.x;
+		moveDirection.y = 0;// uuuh I dont like this, if you look up/down, you will move slower than looking straight.
+		moveDirection.Normalize();// unless.....?
+
+		//_characterController.SimpleMove(new Vector3(moveStick.x * moveSpeed * Time.deltaTime, 0, moveStick.y * moveSpeed * Time.deltaTime));
+		_characterController.SimpleMove(moveDirection * moveSpeed * Time.deltaTime);
+
+
 
 		headStick.Normalize();
 		//rotate based off x,y
 		// make sure final rotation x,y is within bounds
-
-
 		// HEAD ROTATION
 		// y is actually x and x is actually y.
 		// to rotate in a direction we rotate on the other axis
@@ -79,12 +87,14 @@ public class RemoteControlledObject : MonoBehaviour
 		currentHeadXRotation += headStick.y * headSpeed * Time.deltaTime;
 
 		//Debug.Log("PREnewRotation: " + newRotation);
-		currentHeadXRotation = Mathf.Clamp(currentHeadXRotation, -MaxHeadRotationMagnitude.y, MaxHeadRotationMagnitude.y);
-		currentHeadYRotation = Mathf.Clamp(currentHeadYRotation, -MaxHeadRotationMagnitude.x, MaxHeadRotationMagnitude.x);
+		// REMOVE CLAMP, LET THAT BOY SPIN!
+		//currentHeadXRotation = Mathf.Clamp(currentHeadXRotation, -MaxHeadRotationMagnitude.y, MaxHeadRotationMagnitude.y);
+		//currentHeadYRotation = Mathf.Clamp(currentHeadYRotation, -MaxHeadRotationMagnitude.x, MaxHeadRotationMagnitude.x);
 		//Debug.Log("POSTnewRotation: " + newRotation);
 		headTransform.localEulerAngles = new Vector3(currentHeadXRotation, currentHeadYRotation, 0f);
 
         // ARM ROTATION
+		// TODO: Remove mechanic and use buttons for something else
         currentArmYRotation += armStick.x * armSpeed * Time.deltaTime;
         currentArmXRotation += armStick.y * armSpeed * Time.deltaTime;
         //currentArmXRotation += armStick.y * armSpeed;
@@ -96,10 +106,15 @@ public class RemoteControlledObject : MonoBehaviour
 
 	private void FixedUpdate()
 	{
+		if(KeyboardControls)
+		{
+			KeyboardInput();
+			return;
+		}
 		// hold shift for camera
 		// only used for testing with keyboard
 		Vector2 axis;
-		if(leftController)
+		if(LeftController)
 		{
 			axis = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
 
@@ -120,7 +135,7 @@ public class RemoteControlledObject : MonoBehaviour
 	{
 		if(Input.GetKey(KeyCode.RightShift))
 		{
-			if(Input.GetKey(KeyCode.UpArrow))
+			/*if(Input.GetKey(KeyCode.UpArrow))
 			{
 				headStick.y -= 1;
 			}
@@ -131,7 +146,7 @@ public class RemoteControlledObject : MonoBehaviour
 			else
 			{
 				headStick.y = 0;
-			}
+			}*/
 
 			if(Input.GetKey(KeyCode.LeftArrow))
 			{
@@ -148,6 +163,7 @@ public class RemoteControlledObject : MonoBehaviour
 		}
 		else if(Input.GetKey(KeyCode.RightControl))
 		{
+			headStick = Vector2.zero;
 			if(Input.GetKey(KeyCode.UpArrow))
 			{
 				armStick.y -= 1;
@@ -176,6 +192,7 @@ public class RemoteControlledObject : MonoBehaviour
 		}
 		else
 		{
+			headStick = Vector2.zero;
 			if(Input.GetKey(KeyCode.UpArrow))
 			{
 				moveStick.y += 1;

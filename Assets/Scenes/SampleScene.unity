@@ -29330,6 +29330,11 @@ Transform:
   m_Father: {fileID: 450328069}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1069365560 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2585890942560936954, guid: 63eb761dee2ae8d48b8f209dc94e272d, type: 3}
+  m_PrefabInstance: {fileID: 6307776974632313949}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1069907023
 GameObject:
   m_ObjectHideFlags: 0
@@ -57837,7 +57842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1448414415477089758, guid: 63eb761dee2ae8d48b8f209dc94e272d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.308
+      value: -2.54
       objectReference: {fileID: 0}
     - target: {fileID: 1448414415477089758, guid: 63eb761dee2ae8d48b8f209dc94e272d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -57866,6 +57871,14 @@ PrefabInstance:
     - target: {fileID: 1448414415477089758, guid: 63eb761dee2ae8d48b8f209dc94e272d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086573565329973090, guid: 63eb761dee2ae8d48b8f209dc94e272d, type: 3}
+      propertyPath: headTransform
+      value: 
+      objectReference: {fileID: 1069365560}
+    - target: {fileID: 3086573565329973090, guid: 63eb761dee2ae8d48b8f209dc94e272d, type: 3}
+      propertyPath: KeyboardControls
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4565977127760582384, guid: 63eb761dee2ae8d48b8f209dc94e272d, type: 3}
       propertyPath: m_Name
