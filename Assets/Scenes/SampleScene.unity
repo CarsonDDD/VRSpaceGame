@@ -195,6 +195,34 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1835697800}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DoorController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
       value: ControllableDoor (7)
@@ -1254,6 +1282,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8044941219872748638, guid: fc782584ffd6ca8489516139d0fd3bb7, type: 3}
   m_PrefabInstance: {fileID: 223751198}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &241569111 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6947305343609264503, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+  m_PrefabInstance: {fileID: 1978943350}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be61bc1183cbda14489f47d59301b53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &263232228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1402,6 +1441,34 @@ PrefabInstance:
     - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1696839147}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DoorController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
@@ -18490,6 +18557,34 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1944721726}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DoorController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
       value: ControllableDoor (2)
@@ -19193,6 +19288,34 @@ PrefabInstance:
     - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1693902416}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DoorController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
@@ -20726,6 +20849,34 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1452744450}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DoorController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
       value: ControllableDoor (3)
@@ -21005,6 +21156,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6356277031228802269, guid: 56d0dde30bc5ad6479be8a29d48020e0, type: 3}
   m_PrefabInstance: {fileID: 707598648}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &709516010 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6947305343609264503, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+  m_PrefabInstance: {fileID: 1533585857}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be61bc1183cbda14489f47d59301b53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &711090455
 GameObject:
   m_ObjectHideFlags: 0
@@ -21143,6 +21305,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721405455}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &742661652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6947305343609264503, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+  m_PrefabInstance: {fileID: 1203604808}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be61bc1183cbda14489f47d59301b53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &744459449
 GameObject:
   m_ObjectHideFlags: 0
@@ -23162,6 +23335,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1498409226}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
       value: ControllableDoor
@@ -23962,6 +24147,34 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 742661652}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DoorController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
       value: ControllableDoor (5)
@@ -24306,6 +24519,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241752700}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1245060352 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6947305343609264503, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+  m_PrefabInstance: {fileID: 1493500639}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be61bc1183cbda14489f47d59301b53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1293088346
 GameObject:
   m_ObjectHideFlags: 0
@@ -25632,6 +25856,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447495187}
   m_CullTransparentMesh: 1
+--- !u!114 &1452744450 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6947305343609264503, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+  m_PrefabInstance: {fileID: 666829012}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be61bc1183cbda14489f47d59301b53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1467141965
 GameObject:
   m_ObjectHideFlags: 0
@@ -25885,6 +26120,34 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1245060352}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DoorController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
       value: ControllableDoor (4)
@@ -26049,6 +26312,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8044941219872748638, guid: fc782584ffd6ca8489516139d0fd3bb7, type: 3}
   m_PrefabInstance: {fileID: 1497178482}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1498409226 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6947305343609264503, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+  m_PrefabInstance: {fileID: 1082631934}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be61bc1183cbda14489f47d59301b53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1523462588
 GameObject:
   m_ObjectHideFlags: 0
@@ -26478,6 +26752,34 @@ PrefabInstance:
     - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 709516010}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DoorController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
@@ -27499,6 +27801,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1693902416 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6947305343609264503, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+  m_PrefabInstance: {fileID: 483502415}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be61bc1183cbda14489f47d59301b53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1696839147 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6947305343609264503, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+  m_PrefabInstance: {fileID: 270907341}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be61bc1183cbda14489f47d59301b53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1700313073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27924,6 +28248,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d1ac8b0fdd0fad40bc5d0d649308171, type: 3}
+--- !u!114 &1835697800 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6947305343609264503, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+  m_PrefabInstance: {fileID: 19918198}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be61bc1183cbda14489f47d59301b53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1853237625
 GameObject:
   m_ObjectHideFlags: 0
@@ -28389,6 +28724,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1944721726 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6947305343609264503, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+  m_PrefabInstance: {fileID: 437862449}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be61bc1183cbda14489f47d59301b53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1970605801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28521,6 +28867,34 @@ PrefabInstance:
     - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 241569111}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DoorController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name

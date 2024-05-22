@@ -150,7 +150,7 @@ public class RemoteControlledObject : MonoBehaviour
 			moveStick.x = axis.x;
 			moveStick.y = axis.y;
 
-			headStick.x = 0;
+			headStick = Vector2.zero;
 
 		}
 	}
