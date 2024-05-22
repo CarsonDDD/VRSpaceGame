@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2539131706951618606}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.51, z: 0.75}
+  m_LocalScale: {x: 0.9, y: 0.51, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1147081417784589459}
@@ -135,12 +135,12 @@ Transform:
   m_GameObject: {fileID: 5945104816107679733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.51, y: 0.93, z: 5.477}
-  m_LocalScale: {x: 4, y: 4, z: 12}
+  m_LocalScale: {x: 6, y: 6, z: 12}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1147081417784589459}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &7992546837165904019
 BoxCollider:
@@ -259,7 +259,7 @@ Transform:
   m_GameObject: {fileID: 8326993966588187496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1.1693}
+  m_LocalScale: {x: 1, y: 1, z: 1.41}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1147081417784589459}

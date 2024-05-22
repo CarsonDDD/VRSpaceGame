@@ -26,7 +26,8 @@ Ideas:
 final todo: 
 - [x] robot rotation
 - [x] hook up doors
-- [ ] cameras
+- [x] cameras
+- [ ] name cameras
 - [ ] Unlock game
 - [ ] add robot grab/pulls?
 - [ ] multiple robots act as lives

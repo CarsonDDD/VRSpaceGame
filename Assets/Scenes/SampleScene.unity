@@ -187,6 +187,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
       value: ControllableDoor (7)
@@ -1082,6 +1090,14 @@ PrefabInstance:
     - target: {fileID: 471223966268537314, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
@@ -18235,6 +18251,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
       value: ControllableDoor (2)
@@ -18670,6 +18694,14 @@ PrefabInstance:
     - target: {fileID: 471223966268537314, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
@@ -19286,6 +19318,14 @@ PrefabInstance:
     - target: {fileID: 471223966268537314, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
@@ -21468,6 +21508,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
       value: ControllableDoor
@@ -22303,6 +22351,14 @@ PrefabInstance:
     - target: {fileID: 471223966268537314, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
@@ -23639,6 +23695,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
       value: ControllableDoor (4)
@@ -23862,6 +23926,14 @@ PrefabInstance:
     - target: {fileID: 471223966268537314, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
@@ -25681,6 +25753,14 @@ PrefabInstance:
     - target: {fileID: 471223966268537314, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8201570850740804002, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: m_Name
@@ -37238,6 +37318,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375422019833490269, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7017011816045229860, guid: 2ba4af1ab4ec24840a45babaefba14bf, type: 3}
       propertyPath: OnPressed.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -41817,10 +41905,26 @@ PrefabInstance:
       propertyPath: KeyboardControls
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3101943334067312594, guid: 63eb761dee2ae8d48b8f209dc94e272d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 27ca37b0beca0fe46a5de8caeaee3089, type: 2}
+    - target: {fileID: 3512058743872766807, guid: 63eb761dee2ae8d48b8f209dc94e272d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 27ca37b0beca0fe46a5de8caeaee3089, type: 2}
+    - target: {fileID: 4463570315246349285, guid: 63eb761dee2ae8d48b8f209dc94e272d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 27ca37b0beca0fe46a5de8caeaee3089, type: 2}
     - target: {fileID: 4565977127760582384, guid: 63eb761dee2ae8d48b8f209dc94e272d, type: 3}
       propertyPath: m_Name
       value: RobotCameraRig
       objectReference: {fileID: 0}
+    - target: {fileID: 5851500908855917965, guid: 63eb761dee2ae8d48b8f209dc94e272d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7c9a4e99057fbf94db08bd3116e9cd23, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
