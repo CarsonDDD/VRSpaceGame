@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class DoorController : MonoBehaviour
@@ -14,10 +15,12 @@ public class DoorController : MonoBehaviour
 	private Vector3 openPosition = new Vector3 (-1, 0, 0);// close position is always 0,0,0
 	private Vector3 closedPosition = new Vector3(0, 0, 0);
 
+    private AudioSource soundEffect;
+
 	// Start is called before the first frame update
 	void Start()
     {
-        
+        soundEffect = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -42,6 +45,7 @@ public class DoorController : MonoBehaviour
         Debug.Log("Door opening");
         isOpening = true;
         isClosing = false;
+        soundEffect.Play();
     }
 
 	public void Close()
@@ -49,6 +53,7 @@ public class DoorController : MonoBehaviour
 		Debug.Log("Door closing");
 		isOpening = false;
 		isClosing = true;
+		soundEffect.Play();
 	}
 
     public void ToggleDoor()
