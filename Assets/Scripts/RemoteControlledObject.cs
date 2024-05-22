@@ -49,6 +49,13 @@ public class RemoteControlledObject : MonoBehaviour
 																	 //public float moveReturnSpeed = 0.1f; // This may be a bad idea. This is done automatically through the real controller, no need to sim
 
 
+	// GRABBER
+	/*[SerializeField] private Transform grabPoint;
+	[SerializeField] private float grabRadius = 3;
+	private Rigidbody grabbedObject = null;
+	private bool isGrabbing = false;*/
+
+
 	//[SerializeField] public Controller controller;
 
     // Start is called before the first frame update
@@ -64,6 +71,11 @@ public class RemoteControlledObject : MonoBehaviour
     // Revert back to calling fixed update
     void Update()
     {
+		HandleMovement();
+    }
+
+	private void HandleMovement()
+	{
 		// MOVEMENT
 		// move.y = z movement
 		moveStick.Normalize();
@@ -93,16 +105,16 @@ public class RemoteControlledObject : MonoBehaviour
 		//Debug.Log("POSTnewRotation: " + newRotation);
 		headTransform.localEulerAngles = new Vector3(currentHeadXRotation, currentHeadYRotation, 0f);
 
-        // ARM ROTATION
+		// ARM ROTATION
 		// TODO: Remove mechanic and use buttons for something else
-        currentArmYRotation += armStick.x * armSpeed * Time.deltaTime;
-        currentArmXRotation += armStick.y * armSpeed * Time.deltaTime;
-        //currentArmXRotation += armStick.y * armSpeed;
+		currentArmYRotation += armStick.x * armSpeed * Time.deltaTime;
+		currentArmXRotation += armStick.y * armSpeed * Time.deltaTime;
+		//currentArmXRotation += armStick.y * armSpeed;
 		// TODO: Z/roll movement
-        currentArmXRotation = Mathf.Clamp(currentArmXRotation, -MaxArmRotationMagnitude.y, MaxArmRotationMagnitude.y);
-        currentArmYRotation = Mathf.Clamp(currentArmYRotation, -MaxArmRotationMagnitude.x, MaxArmRotationMagnitude.x);
-        armPivot.localEulerAngles = new Vector3(currentArmXRotation, currentArmYRotation, 0f);
-    }
+		currentArmXRotation = Mathf.Clamp(currentArmXRotation, -MaxArmRotationMagnitude.y, MaxArmRotationMagnitude.y);
+		currentArmYRotation = Mathf.Clamp(currentArmYRotation, -MaxArmRotationMagnitude.x, MaxArmRotationMagnitude.x);
+		armPivot.localEulerAngles = new Vector3(currentArmXRotation, currentArmYRotation, 0f);
+	}
 
 	private void FixedUpdate()
 	{
@@ -125,7 +137,7 @@ public class RemoteControlledObject : MonoBehaviour
 		}
 
 		axis.Normalize();
-
+		// IMPLEMENT ROTATE AND GRAB FOR CONTROLLER
 
 		moveStick.x = axis.x;
 		moveStick.y = axis.y;
