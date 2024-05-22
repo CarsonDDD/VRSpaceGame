@@ -1,3 +1,4 @@
+using Oculus.Interaction.Input;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +28,8 @@ public class RemoteControlledObject : MonoBehaviour
 	public float headSpeed = 0.09f;
 	public float armSpeed = 0.05f;
 
+	public bool leftController = true;
+
 	//aaaah
 	private float currentHeadXRotation = 0f;
 	private float currentHeadYRotation = 0f;
@@ -41,8 +44,10 @@ public class RemoteControlledObject : MonoBehaviour
     public Vector2 MaxHeadRotationMagnitude = new Vector2(10,10);// cannot be negative
     public Vector2 armStick = new Vector2(0, 0);// TODO: this may need to be a vector 3
     public Vector3 MaxArmRotationMagnitude = new Vector3(15, 15, 15);// cannot be negative
-    //public float moveReturnSpeed = 0.1f; // This may be a bad idea. This is done automatically through the real controller, no need to sim
+																	 //public float moveReturnSpeed = 0.1f; // This may be a bad idea. This is done automatically through the real controller, no need to sim
 
+
+	//[SerializeField] public Controller controller;
 
     // Start is called before the first frame update
     void Start()
@@ -91,11 +96,30 @@ public class RemoteControlledObject : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-        // hold shift for camera
-        // only used for testing with keyboard
+		// hold shift for camera
+		// only used for testing with keyboard
+		Vector2 axis;
+		if(leftController)
+		{
+			axis = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
 
-        if(Input.GetKey(KeyCode.RightShift))
-        {
+		}
+		else
+		{
+			axis = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);
+		}
+
+		axis.Normalize();
+
+
+		moveStick.x = axis.x;
+		moveStick.y = axis.y;
+	}
+
+	private void KeyboardInput()
+	{
+		if(Input.GetKey(KeyCode.RightShift))
+		{
 			if(Input.GetKey(KeyCode.UpArrow))
 			{
 				headStick.y -= 1;
@@ -122,36 +146,36 @@ public class RemoteControlledObject : MonoBehaviour
 				headStick.x = 0;
 			}
 		}
-		else if (Input.GetKey(KeyCode.RightControl))
-        {
-            if (Input.GetKey(KeyCode.UpArrow))
-            {
-                armStick.y -= 1;
-            }
-            else if (Input.GetKey(KeyCode.DownArrow))
-            {
-                armStick.y += 1;
-            }
-            else
-            {
-                armStick.y = 0;
-            }
+		else if(Input.GetKey(KeyCode.RightControl))
+		{
+			if(Input.GetKey(KeyCode.UpArrow))
+			{
+				armStick.y -= 1;
+			}
+			else if(Input.GetKey(KeyCode.DownArrow))
+			{
+				armStick.y += 1;
+			}
+			else
+			{
+				armStick.y = 0;
+			}
 
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                armStick.x -= 1;
-            }
-            else if (Input.GetKey(KeyCode.RightArrow))
-            {
-                armStick.x += 1;
-            }
-            else
-            {
-                armStick.x = 0;
-            }
-        }
-        else
-        {
+			if(Input.GetKey(KeyCode.LeftArrow))
+			{
+				armStick.x -= 1;
+			}
+			else if(Input.GetKey(KeyCode.RightArrow))
+			{
+				armStick.x += 1;
+			}
+			else
+			{
+				armStick.x = 0;
+			}
+		}
+		else
+		{
 			if(Input.GetKey(KeyCode.UpArrow))
 			{
 				moveStick.y += 1;
