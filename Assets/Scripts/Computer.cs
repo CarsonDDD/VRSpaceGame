@@ -53,29 +53,45 @@ public class Computer : MonoBehaviour
         if(currentDisplayIndex != -1)
         {
             cameras[currentDisplayIndex].targetTexture = null;
-            cameras[currentDisplayIndex].enabled = false;
+            cameras[currentDisplayIndex].gameObject.transform.parent.gameObject.SetActive(false);
         }
 
 		currentDisplayIndex = index;
 		cameras[currentDisplayIndex].targetTexture = cameraTargetTexture;
-		cameras[currentDisplayIndex].enabled = true;
+		cameras[currentDisplayIndex].gameObject.transform.parent.gameObject.SetActive(true);
 
 	}
 
     void InitalizeCameras()
     {
         GameObject[] cams = GameObject.FindGameObjectsWithTag("SecurityCamera");
-        cameras = new Camera[cams.Length];
-        Debug.Log("Total Security Cameras in Scene: " + cams.Length);
+		//cameras = new Camera[cams.Length];
+		List<(Camera, int)> cameraTemp = new List<(Camera, int)>();
+		Debug.Log("Total Security Cameras in Scene: " + cams.Length);
         for(int i=0; i < cams.Length; i++)
         {
-            cameras[i] = cams[i].GetComponentInChildren<Camera>();
-            cameras[i].targetTexture = null;
+            Camera camera = cams[i].GetComponentInChildren<Camera>();
+            camera.targetTexture = null;
+            //camera.enabled = false;
+            int id = cams[i].GetComponentInChildren<SecurityCamera>().ID;
+            cameraTemp.Add((camera, id));
+			//cameras[i] = cams[i].GetComponentInChildren<Camera>();
+            //cameras[i].targetTexture = null;
             //cameras[i].enabled = false;
         
             Debug.Log($"Added {cams[i].name} to cameras!");
+            cams[i].gameObject.SetActive(false);
  
 		}
+
+		cameraTemp.Sort((x,y) => x.Item2.CompareTo(y.Item2));// modern csharp moment
+		 // this function is called once at start up, I dont care that it is slow and sucks
+		cameras = new Camera[cameraTemp.Count];
+		for(int i =0; i< cameraTemp.Count; i++)
+        {
+            cameras[i] = cameraTemp[i].Item1;
+        }
+		Debug.Log("Initalized all cameras: " + cameras.Length);
 
 		/*for(int i = 0; i < cameras.Length; i++)
         {
@@ -94,6 +110,6 @@ public class Computer : MonoBehaviour
 			toggle.group = CameraControlButtonRoot.GetComponent<ToggleGroup>();
 		}*/
 
-	
+
 	}
 }

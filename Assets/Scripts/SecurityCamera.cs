@@ -12,6 +12,8 @@ public class SecurityCamera : MonoBehaviour
 
 	public bool EnableRotation = true;
 
+	public int ID = -1;
+
 	private bool rotatingRight = true;// controls direction. The camera always rotates
 	private float currentAngle = 0f;
 	// Default rotation 0,0,0
