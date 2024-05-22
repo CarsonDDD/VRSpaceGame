@@ -24,7 +24,7 @@ public class Computer : MonoBehaviour
         InitalizeCameras();//maybe needs to call in OnAwake()?!?!?
         if(cameras != null  && cameras.Length > 0)
         {
-            SetCamera(0);
+            SetCamera(3);
 		}
         else
         {

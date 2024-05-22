@@ -30,7 +30,7 @@ final todo:
 - [ ] name cameras
 - [ ] Unlock game
 - [x] add robot grab/pulls? aka ridgedbody big mass
-- [ ] multiple robots act as lives
+- [x] multiple robots act as lives
 - [x] enemy ai
 - [x] sound/extras
 - [ ] story setup

@@ -134,13 +134,25 @@ public class RemoteControlledObject : MonoBehaviour
 		else
 		{
 			axis = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);
+			// This does notthing, it only serves as a memory of a dead idea.
 		}
 
 		axis.Normalize();
 		// IMPLEMENT ROTATE AND GRAB FOR CONTROLLER
 
-		moveStick.x = axis.x;
-		moveStick.y = axis.y;
+		if(OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
+		{
+			headStick.x = axis.x;
+			//headStick.y = axis.y;
+		}
+		else
+		{
+			moveStick.x = axis.x;
+			moveStick.y = axis.y;
+
+			headStick.x = 0;
+
+		}
 	}
 
 	private void KeyboardInput()
