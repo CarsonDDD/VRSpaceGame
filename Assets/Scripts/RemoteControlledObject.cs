@@ -71,6 +71,8 @@ public class RemoteControlledObject : MonoBehaviour
     // Revert back to calling fixed update
     void Update()
     {
+		if(!isAlive) return;
+
 		HandleMovement();
     }
 
@@ -118,6 +120,8 @@ public class RemoteControlledObject : MonoBehaviour
 
 	private void FixedUpdate()
 	{
+		if(!isAlive) return;
+
 		if(KeyboardControls)
 		{
 			KeyboardInput();
@@ -153,6 +157,25 @@ public class RemoteControlledObject : MonoBehaviour
 			headStick = Vector2.zero;
 
 		}
+	}
+
+	public void Kill()
+	{
+		if(!isAlive) return;// a;ready dead
+
+		isAlive = false;
+		//sound
+		armPivot.gameObject.SetActive(false);
+
+		float r = Random.Range(40f, 90f);
+		transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, r);
+
+		AudioSource explosion = GetComponent<AudioSource>();
+		if(explosion != null)
+		{
+			explosion.Play();
+		}
+
 	}
 
 	private void KeyboardInput()

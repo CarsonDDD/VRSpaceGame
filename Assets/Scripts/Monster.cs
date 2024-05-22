@@ -115,4 +115,13 @@ public class Monster : MonoBehaviour
 			}
 		}
 	}
+
+	private void OnCollisionEnter(Collision collision)
+	{
+		RemoteControlledObject robot = collision.gameObject.GetComponent<RemoteControlledObject>();
+		if(robot != null)
+		{
+			robot.Kill();
+		}
+	}
 }
