@@ -31,8 +31,8 @@ final todo:
 - [ ] Unlock game
 - [x] add robot grab/pulls? aka ridgedbody big mass
 - [ ] multiple robots act as lives
-- [ ] enemy ai
-- [ ] sound/extras
+- [x] enemy ai
+- [x] sound/extras
 - [ ] story setup
 - [ ] table setup
 

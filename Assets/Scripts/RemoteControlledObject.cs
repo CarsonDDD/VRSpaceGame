@@ -48,7 +48,7 @@ public class RemoteControlledObject : MonoBehaviour
     public Vector3 MaxArmRotationMagnitude = new Vector3(15, 15, 15);// cannot be negative
 																	 //public float moveReturnSpeed = 0.1f; // This may be a bad idea. This is done automatically through the real controller, no need to sim
 
-
+	public bool isAlive = true;
 	// GRABBER
 	/*[SerializeField] private Transform grabPoint;
 	[SerializeField] private float grabRadius = 3;
